@@ -1,4 +1,4 @@
-def find_big_sets(basket): #builds sets, from big sets to small ones
+def find_big_sets(basket): #builds sets, from big sets to small sets
     basket.sort()
     count = 0
     for i in range(len(basket)):
