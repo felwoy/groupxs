@@ -1,4 +1,4 @@
-from basket.basket import * #should import solve only here
+from basket.basket import *
 
 # basic test to prove the given example is fullfilled, since that's the only verified solution
 # could have been done via unittest as well
