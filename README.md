@@ -1,5 +1,5 @@
-# groupxs first task
-## main-branch won't be edited no more, generalize might
+# groupXS first task
+## main-branch won't be edited no more, generalize-branch might
 <p> 
 Added solution for given problem in basket <br>
 Added test for the example given in the task in tests <br>
