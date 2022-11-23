@@ -1,7 +1,7 @@
 from basket.basket import *
+# could have been done via unittest as well, was not sure if this was the intended way or not
 
 # basic test to prove the given example is fulfilled, since that's the only verified solution
-# could have been done via unittest as well
 def test_basket():
     assert solve([2, 2, 2, 1, 1], [0, 0.05, 0.1, 0.2, 0.25], 8) == 51.2, \
             "example was not fulfilled"
@@ -17,11 +17,11 @@ def test_setfinding():
         ret_total += (len(ret) - i) * ret[i]
     assert ret_total == basket_total, \
             "lost or found books during set building"
-#### place for more tests, noticed there is a lot more in testing to do
+# place for more tests, noticed there is a lot more in testing to do
 
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     test_basket()
     print("example test passed")
     test_setfinding()
