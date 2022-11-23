@@ -19,10 +19,11 @@ def prio_4sets(basket): #only works for this problem
     return basket
 
 def calculate_price(basket, discounts):
-    assert len(basket) == len(discounts)
+    assert len(basket) == len(discounts), \
+            "#discounts and #distinct books have to match"
     ret = 0
     for i in range(len(basket)):
-        ret += basket[i] * (1-discounts[-(i+1)]) * (5-i)
+        ret += basket[i] * (1-discounts[-(i+1)]) * (len(basket)-i)
     return ret
 
 def solve(basket, discounts, base_price):
