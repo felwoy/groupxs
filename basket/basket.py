@@ -28,7 +28,7 @@ def find_prio_basket(discounts): #find set that give best discounts
     return max_index
 
 
-def prio_sets(prio, basket): #transforms oen lower and oen higher in two prio sets
+def prio_sets(prio, basket): #transforms one lower and one higher in two prio sets
     if prio >= len(basket) or prio <= 0: #can't prio that, could argue about asserting this
         return basket
     if basket[-prio-1] != 0 and basket[-prio+1] !=0: #well, I regret how I ordered discounts
