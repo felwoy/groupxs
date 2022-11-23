@@ -1,4 +1,4 @@
-from basket.basket import *
+from basket.basket import * #should import solve only here
 
 # basic test to prove the given example is fullfilled, since that's the only verified solution
 def test_basket():
