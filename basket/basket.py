@@ -29,7 +29,6 @@ def calculate_price(basket, discounts): # calculates price from given set_basket
 def solve(basket, discounts, base_price): #solves whole problem using 3 functions above
     basket = find_big_sets(basket)
     basket = prio_4sets(basket)
-
     return calculate_price(basket, discounts) * base_price
 
 if __name__ == "__main__":
