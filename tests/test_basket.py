@@ -4,7 +4,7 @@ from basket.basket import *
 # could have been done via unittest as well
 def test_basket():
     assert solve([2, 2, 2, 1, 1], [0, 0.05, 0.1, 0.2, 0.25], 8) == 51.2, \
-            "basic logic/math failed"
+            "example was not fulfilled"
 
     
 # test that no books get lost by building sets, could do similar tests for all functions
@@ -15,7 +15,8 @@ def test_setfinding():
     ret_total  = 0
     for i in range(len(ret)):
         ret_total += (len(ret) - i) * ret[i]
-    assert ret_total == basket_total
+    assert ret_total == basket_total, \
+            "lost or found books during set_building"
 #### place for more tests, noticed there is a lot more in testing to do
 
 
