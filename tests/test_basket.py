@@ -1,6 +1,7 @@
 from basket.basket import * #should import solve only here
 
 # basic test to prove the given example is fullfilled, since that's the only verified solution
+# could have been done via unittest as well
 def test_basket():
     assert solve([2, 2, 2, 1, 1], [0, 0.05, 0.1, 0.2, 0.25], 8) == 51.2, \
             "basic logic/math failed"
